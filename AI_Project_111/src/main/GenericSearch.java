@@ -17,7 +17,7 @@ public class GenericSearch {
             }
 
             // Add expanded nodes back to the queue using the qing function
-            nodes = QingFun(nodes, expand(node, problem.operators()));
+           // nodes = QingFun(nodes, expand(node, problem.operators()));
         }
         return null; // If the queue is empty, return failure (null)
     }
