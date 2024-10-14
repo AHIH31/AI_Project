@@ -1,4 +1,4 @@
-package main;
+	package main;
 
 import java.util.List;
 
@@ -18,8 +18,7 @@ class Problem {
     }
 
     public boolean isGoal(State state) {
-        // Define goal state check
-        return state.equals(goalState); // Adjust as needed
+        return state.equals(goalState);
     }
 
     public List<Operator> operators() {

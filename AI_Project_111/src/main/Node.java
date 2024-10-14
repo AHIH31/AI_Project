@@ -1,10 +1,10 @@
 package main;
 
 class Node {
-    State state;      // Current state of the problem
-    Node parent;      // Parent node
-    Operator action;  // The action that generated this node
-    int pathCost;     // The path cost to reach this node
+    State state;
+    Node parent;
+    Operator action;
+    int pathCost;
 
     public Node(State state, Node parent, Operator action, int pathCost) {
         this.state = state;
