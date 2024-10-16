@@ -1,28 +1,32 @@
 	package main;
 
-import java.util.List;
+	import java.util.*;
 
-class Problem {
-    State initialState;
-    State goalState;
-    List<Operator> operators;
+	public class Problem {
+	    private String initialState;
 
-    public Problem(State initialState, State goalState, List<Operator> operators) {
-        this.initialState = initialState;
-        this.goalState = goalState;
-        this.operators = operators;
-    }
+	    public Problem(String initialState) {
+	        this.initialState = initialState;
+	    }
 
-    public State initState() {
-        return initialState;
-    }
+	    public String initialState() {
+	        return initialState;
+	    }
 
-    public boolean isGoal(State state) {
-        return state.equals(goalState);
-    }
+	    public boolean goalTest(String state) {
+	        return state.matches("([a-z]+(e*),?)+");
+	    }
 
-    public List<Operator> operators() {
-        return operators;
-    }
-}
+	    public List<String> getOperators(String state) {
+	        List<String> operators = new ArrayList<>();
+	        return operators;
+	    }
 
+	    public String applyOperator(String state, String operator) {
+	        return state;
+	    }
+
+	    public int getCost(String operator) {
+	        return 1;
+	    }
+	}
